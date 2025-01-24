@@ -1,0 +1,37 @@
+{
+  "name": "ipeaq-smart-contracts",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "local": "hardhat node",
+    "hardhat": "hardhat",
+    "typechain": "hardhat typechain",
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhat",
+    "coverage": "hardhat coverage --network localhost --solcoverjs ./.solcover.cjs --temp artifacts --testfiles \"./test/**/*.mjs\"",
+    "clean": "rimraf artifacts && rimraf cache",
+    "size": "hardhat size-contracts"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "csv": "^6.3.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.3.1",
+    "ethers": "6.13.2",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "^2.2.0",
+    "hardhat-contract-sizer": "^2.10.0",
+    "web3": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "1.0.9",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "4.9.6",
+    "@openzeppelin/contracts-upgradeable": "4.9.6",
+    "@openzeppelin/hardhat-upgrades": "^2.3.3",
+    "chai": "4.3.10",
+    "hardhat": "2.19.1",
+    "hardhat-deploy": "^0.14.0",
+    "shelljs": "0.8.5"
+  }
+}
